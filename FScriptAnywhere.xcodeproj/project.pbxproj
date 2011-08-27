@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233CE5AB140979CA00A4C34D /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233CE5AA140979CA00A4C34D /* FScript.framework */; };
 		23D9505A140953DF00720D9F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D95059140953DF00720D9F /* CoreFoundation.framework */; };
 		23D950791409550F00720D9F /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 23D9506B1409550F00720D9F /* English.lproj */; };
 		23D9507A1409550F00720D9F /* FSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9506D1409550F00720D9F /* FSAController.m */; };
 		23D9507B1409550F00720D9F /* FSAnywhere.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9506F1409550F00720D9F /* FSAnywhere.m */; };
 		23D9507C1409550F00720D9F /* FSAViewAssociationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950711409550F00720D9F /* FSAViewAssociationController.m */; };
 		23D9507D1409550F00720D9F /* FSAWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950731409550F00720D9F /* FSAWindowManager.m */; };
-		23D9507E1409550F00720D9F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D950771409550F00720D9F /* Info.plist */; };
 		23D9507F1409550F00720D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950781409550F00720D9F /* main.m */; };
-		23D950811409559900720D9F /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D950801409559900720D9F /* FScript.framework */; };
 		23D9508314095C8200720D9F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D9508214095C8200720D9F /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23D9508A140974D200720D9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		233CE5AA140979CA00A4C34D /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = /Library/Frameworks/FScript.framework; sourceTree = "<absolute>"; };
 		23D95056140953DF00720D9F /* FScriptAnywhere.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FScriptAnywhere.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D95059140953DF00720D9F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		23D9506B1409550F00720D9F /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = English.lproj; sourceTree = SOURCE_ROOT; };
@@ -33,10 +45,7 @@
 		23D950731409550F00720D9F /* FSAWindowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAWindowManager.m; sourceTree = SOURCE_ROOT; };
 		23D950771409550F00720D9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		23D950781409550F00720D9F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		23D950801409559900720D9F /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = ../../Library/Frameworks/FScript.framework; sourceTree = "<group>"; };
 		23D9508214095C8200720D9F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		23D9508414095D0000720D9F /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = ../../../../usr/lib/libSystem.dylib; sourceTree = "<group>"; };
-		23D9508614095D2200720D9F /* libcompiler_rt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcompiler_rt.dylib; path = ../../../../usr/lib/system/libcompiler_rt.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233CE5AB140979CA00A4C34D /* FScript.framework in Frameworks */,
 				23D9508314095C8200720D9F /* Cocoa.framework in Frameworks */,
 				23D9505A140953DF00720D9F /* CoreFoundation.framework in Frameworks */,
-				23D950811409559900720D9F /* FScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +65,6 @@
 		23D9504B140953DF00720D9F = {
 			isa = PBXGroup;
 			children = (
-				23D9508614095D2200720D9F /* libcompiler_rt.dylib */,
-				23D9508414095D0000720D9F /* libSystem.dylib */,
 				23D9505B140953DF00720D9F /* FScriptAnywhere */,
 				23D95058140953DF00720D9F /* Frameworks */,
 				23D95057140953DF00720D9F /* Products */,
@@ -75,8 +82,8 @@
 		23D95058140953DF00720D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				233CE5AA140979CA00A4C34D /* FScript.framework */,
 				23D9508214095C8200720D9F /* Cocoa.framework */,
-				23D950801409559900720D9F /* FScript.framework */,
 				23D95059140953DF00720D9F /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -110,6 +117,7 @@
 				23D95052140953DF00720D9F /* Sources */,
 				23D95053140953DF00720D9F /* Frameworks */,
 				23D95054140953DF00720D9F /* Resources */,
+				23D9508A140974D200720D9F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -151,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D950791409550F00720D9F /* English.lproj in Resources */,
-				23D9507E1409550F00720D9F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
