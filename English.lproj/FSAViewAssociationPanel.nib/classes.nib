@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                captureView = id; 
+                defineVariable = id; 
+                update = id; 
+                viewInObjectBrowser = id; 
+            }; 
+            CLASS = FSAViewAssociationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                associateButton = NSButton; 
+                browseButton = NSButton; 
+                captureButton = NSButton; 
+                descriptionField = NSTextField; 
+                statusField = NSTextField; 
+                variableNameField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
