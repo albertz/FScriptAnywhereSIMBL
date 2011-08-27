@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23D9505A140953DF00720D9F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D95059140953DF00720D9F /* CoreFoundation.framework */; };
+		23D950791409550F00720D9F /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 23D9506B1409550F00720D9F /* English.lproj */; };
+		23D9507A1409550F00720D9F /* FSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9506D1409550F00720D9F /* FSAController.m */; };
+		23D9507B1409550F00720D9F /* FSAnywhere.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9506F1409550F00720D9F /* FSAnywhere.m */; };
+		23D9507C1409550F00720D9F /* FSAViewAssociationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950711409550F00720D9F /* FSAViewAssociationController.m */; };
+		23D9507D1409550F00720D9F /* FSAWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950731409550F00720D9F /* FSAWindowManager.m */; };
+		23D9507E1409550F00720D9F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D950771409550F00720D9F /* Info.plist */; };
+		23D9507F1409550F00720D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950781409550F00720D9F /* main.m */; };
+		23D950811409559900720D9F /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D950801409559900720D9F /* FScript.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23D95056140953DF00720D9F /* FScriptAnywhere.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FScriptAnywhere.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D95059140953DF00720D9F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		23D9506B1409550F00720D9F /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = English.lproj; sourceTree = SOURCE_ROOT; };
+		23D9506C1409550F00720D9F /* FSAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAController.h; sourceTree = SOURCE_ROOT; };
+		23D9506D1409550F00720D9F /* FSAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAController.m; sourceTree = SOURCE_ROOT; };
+		23D9506E1409550F00720D9F /* FSAnywhere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAnywhere.h; sourceTree = SOURCE_ROOT; };
+		23D9506F1409550F00720D9F /* FSAnywhere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAnywhere.m; sourceTree = SOURCE_ROOT; };
+		23D950701409550F00720D9F /* FSAViewAssociationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAViewAssociationController.h; sourceTree = SOURCE_ROOT; };
+		23D950711409550F00720D9F /* FSAViewAssociationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAViewAssociationController.m; sourceTree = SOURCE_ROOT; };
+		23D950721409550F00720D9F /* FSAWindowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAWindowManager.h; sourceTree = SOURCE_ROOT; };
+		23D950731409550F00720D9F /* FSAWindowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAWindowManager.m; sourceTree = SOURCE_ROOT; };
+		23D950771409550F00720D9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		23D950781409550F00720D9F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		23D950801409559900720D9F /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = ../../Library/Frameworks/FScript.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23D95053140953DF00720D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D9505A140953DF00720D9F /* CoreFoundation.framework in Frameworks */,
+				23D950811409559900720D9F /* FScript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D9504B140953DF00720D9F = {
+			isa = PBXGroup;
+			children = (
+				23D9505B140953DF00720D9F /* FScriptAnywhere */,
+				23D95058140953DF00720D9F /* Frameworks */,
+				23D95057140953DF00720D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23D95057140953DF00720D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23D95056140953DF00720D9F /* FScriptAnywhere.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23D95058140953DF00720D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D950801409559900720D9F /* FScript.framework */,
+				23D95059140953DF00720D9F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23D9505B140953DF00720D9F /* FScriptAnywhere */ = {
+			isa = PBXGroup;
+			children = (
+				23D9506B1409550F00720D9F /* English.lproj */,
+				23D9506C1409550F00720D9F /* FSAController.h */,
+				23D9506D1409550F00720D9F /* FSAController.m */,
+				23D9506E1409550F00720D9F /* FSAnywhere.h */,
+				23D9506F1409550F00720D9F /* FSAnywhere.m */,
+				23D950701409550F00720D9F /* FSAViewAssociationController.h */,
+				23D950711409550F00720D9F /* FSAViewAssociationController.m */,
+				23D950721409550F00720D9F /* FSAWindowManager.h */,
+				23D950731409550F00720D9F /* FSAWindowManager.m */,
+				23D950771409550F00720D9F /* Info.plist */,
+				23D950781409550F00720D9F /* main.m */,
+			);
+			path = FScriptAnywhere;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23D95055140953DF00720D9F /* FScriptAnywhere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D95064140953DF00720D9F /* Build configuration list for PBXNativeTarget "FScriptAnywhere" */;
+			buildPhases = (
+				23D95052140953DF00720D9F /* Sources */,
+				23D95053140953DF00720D9F /* Frameworks */,
+				23D95054140953DF00720D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FScriptAnywhere;
+			productName = FScriptAnywhere;
+			productReference = 23D95056140953DF00720D9F /* FScriptAnywhere.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23D9504D140953DF00720D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Albert Zeyer";
+			};
+			buildConfigurationList = 23D95050140953DF00720D9F /* Build configuration list for PBXProject "FScriptAnywhere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23D9504B140953DF00720D9F;
+			productRefGroup = 23D95057140953DF00720D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23D95055140953DF00720D9F /* FScriptAnywhere */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23D95054140953DF00720D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D950791409550F00720D9F /* English.lproj in Resources */,
+				23D9507E1409550F00720D9F /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23D95052140953DF00720D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D9507A1409550F00720D9F /* FSAController.m in Sources */,
+				23D9507B1409550F00720D9F /* FSAnywhere.m in Sources */,
+				23D9507C1409550F00720D9F /* FSAViewAssociationController.m in Sources */,
+				23D9507D1409550F00720D9F /* FSAWindowManager.m in Sources */,
+				23D9507F1409550F00720D9F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23D95062140953DF00720D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Debug;
+		};
+		23D95063140953DF00720D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Release;
+		};
+		23D95065140953DF00720D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		23D95066140953DF00720D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23D95050140953DF00720D9F /* Build configuration list for PBXProject "FScriptAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D95062140953DF00720D9F /* Debug */,
+				23D95063140953DF00720D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D95064140953DF00720D9F /* Build configuration list for PBXNativeTarget "FScriptAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D95065140953DF00720D9F /* Debug */,
+				23D95066140953DF00720D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23D9504D140953DF00720D9F /* Project object */;
+}
