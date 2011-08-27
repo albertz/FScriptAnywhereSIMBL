@@ -16,6 +16,7 @@
 		23D9507E1409550F00720D9F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D950771409550F00720D9F /* Info.plist */; };
 		23D9507F1409550F00720D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D950781409550F00720D9F /* main.m */; };
 		23D950811409559900720D9F /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D950801409559900720D9F /* FScript.framework */; };
+		23D9508314095C8200720D9F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D9508214095C8200720D9F /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		23D950771409550F00720D9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		23D950781409550F00720D9F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		23D950801409559900720D9F /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = ../../Library/Frameworks/FScript.framework; sourceTree = "<group>"; };
+		23D9508214095C8200720D9F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		23D9508414095D0000720D9F /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = ../../../../usr/lib/libSystem.dylib; sourceTree = "<group>"; };
+		23D9508614095D2200720D9F /* libcompiler_rt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcompiler_rt.dylib; path = ../../../../usr/lib/system/libcompiler_rt.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D9508314095C8200720D9F /* Cocoa.framework in Frameworks */,
 				23D9505A140953DF00720D9F /* CoreFoundation.framework in Frameworks */,
 				23D950811409559900720D9F /* FScript.framework in Frameworks */,
 			);
@@ -51,6 +56,8 @@
 		23D9504B140953DF00720D9F = {
 			isa = PBXGroup;
 			children = (
+				23D9508614095D2200720D9F /* libcompiler_rt.dylib */,
+				23D9508414095D0000720D9F /* libSystem.dylib */,
 				23D9505B140953DF00720D9F /* FScriptAnywhere */,
 				23D95058140953DF00720D9F /* Frameworks */,
 				23D95057140953DF00720D9F /* Products */,
@@ -68,6 +75,7 @@
 		23D95058140953DF00720D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23D9508214095C8200720D9F /* Cocoa.framework */,
 				23D950801409559900720D9F /* FScript.framework */,
 				23D95059140953DF00720D9F /* CoreFoundation.framework */,
 			);
@@ -187,6 +195,10 @@
 					"\"$(SRCROOT)/../../Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/system,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -200,6 +212,10 @@
 					"\"$(SRCROOT)/../../Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/system,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
