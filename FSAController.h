@@ -26,13 +26,13 @@
 
 #import <AppKit/AppKit.h>
 #import <FScript/FSInterpreterView.h>
-#import <FScript/System.h>
+#import <FScript/FSSystem.h>
 
 @class FSAViewAssociationController;
 
 @interface FSAController : NSWindowController {
     IBOutlet FSInterpreterView *interpreterView;
-    System *system;
+    FSSystem *system;
     FSAViewAssociationController *viewAssociationController;
     unsigned interpreterNum;
 }
@@ -42,6 +42,6 @@
 
 - (FSInterpreterView *)interpreterView;
 - (NSString *)interpreterLabel;
-- (System *)system;
+- (FSSystem *)system;
 
 @end

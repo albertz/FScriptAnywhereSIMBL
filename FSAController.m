@@ -52,7 +52,7 @@
     if (!alreadyInstalled && ((mainMenu = [NSApp mainMenu]) != nil)) {
         NSMenu *insertIntoMenu = nil;
         NSMenuItem *item;
-        unsigned insertLoc = NSNotFound;
+        unsigned long insertLoc = NSNotFound;
         NSBundle *bundle = [NSBundle bundleForClass:self];
         NSMenu * beforeSubmenu = [NSApp windowsMenu];
         // Succeed or fail, we do not try again.
@@ -68,7 +68,7 @@
 
         if (beforeSubmenu) {
             NSArray *itemArray = [insertIntoMenu itemArray];
-            unsigned i, c = [itemArray count];
+            unsigned long i, c = [itemArray count];
 
             // Default to end of menu
             insertLoc = c;
@@ -81,7 +81,7 @@
             }
         } else {
             NSArray *itemArray = [insertIntoMenu itemArray];
-            unsigned i = [itemArray count];
+            unsigned long i = [itemArray count];
 
             // Default to end of menu
             insertLoc = i;
@@ -105,7 +105,7 @@
             [item setTarget: self];
             [fsaMenu addItemWithTitle: NSLocalizedStringFromTableInBundle(@"Associate With Interface", @"FSA", bundle, @"Title of Associate with Interface menu item") action: @selector(FSA_associateWithInterface:) keyEquivalent: @""];
             [fsaMenu addItem: [NSMenuItem separatorItem]];
-            item = [fsaMenu addItemWithTitle: NSLocalizedStringFromTableInBundle(@"About F-Script Anywhere…", @"FSA", bundle, @"Title of Info Panel menu item") action:@selector(showInfo:) keyEquivalent: @""];
+            item = [fsaMenu addItemWithTitle: NSLocalizedStringFromTableInBundle(@"About F-Script Anywhere...", @"FSA", bundle, @"Title of Info Panel menu item") action:@selector(showInfo:) keyEquivalent: @""];
             [item setTarget: self];
             [[FSAWindowManager sharedManager] setWindowMenu: fsaMenu];
         }
@@ -163,7 +163,7 @@
         [[FSAWindowManager sharedManager] registerWindow: window];
         system = [[[self interpreterView] interpreter] objectForIdentifier: @"sys" found: NULL];
         [system retain];
-        NSAssert1([system isKindOfClass: [System class]], @"Initial value bound to identifier 'sys' is not a System object, but %@", system);
+        NSAssert1([system isKindOfClass: [FSSystem class]], @"Initial value bound to identifier 'sys' is not a System object, but %@", system);
     }
     
     return self;
@@ -198,7 +198,7 @@
     return interpreterView;
 }
 
-- (System *)system;
+- (FSSystem *)system;
 {
     return system;
 }

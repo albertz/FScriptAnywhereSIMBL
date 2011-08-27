@@ -26,7 +26,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class FSInterpreter, System;
+@class FSInterpreter, FSSystem;
 @class FSAController;
 
 @interface FSAViewAssociationController : NSWindowController
@@ -41,7 +41,7 @@
     id selectedElement;
     NSMenu *viewHierarchyMenu;
     FSInterpreter *interpreter;
-    System *system;
+    FSSystem *system;
 }
 
 - (id)initWithFSAController:(FSAController *)fsa;

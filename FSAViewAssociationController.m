@@ -29,12 +29,7 @@
 #import "FSAWindowManager.h"
 #import "FSAnywhere.h"
 #import <FScript/FSInterpreter.h>
-#import <FScript/System.h>
-
-// XXX workaround for lack of identifier validation; should go away when F-Script adds (promised) direct support for this
-@interface Compiler
-+ (BOOL)isValidIdentifier:(NSString *)str;
-@end
+#import <FScript/FSSystem.h>
 
 @implementation FSAViewAssociationController
 
@@ -76,9 +71,8 @@
     [browseButton setEnabled: selectedElement != nil];
     [statusField setStringValue: @""];
     if ([variableName length] != 0) {
-        if (![Compiler isValidIdentifier: variableName]) {
-            [statusField setStringValue: @"Invalid name: contains spaces, punctuation or non-ASCII characters"];
-        } else if (selectedElement != nil) {
+		// TODO: check if valid identifier
+        if (selectedElement != nil) {
             [statusField setStringValue: @"Click “Associate” to assign to this variable"];
             canAssignToVariable = YES;
         }
