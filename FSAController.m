@@ -49,7 +49,31 @@
     static BOOL alreadyInstalled = NO;
     NSMenu *mainMenu = nil;
     
-    if (!alreadyInstalled && ((mainMenu = [NSApp mainMenu]) != nil)) {
+    if (!alreadyInstalled) {
+		static BOOL alreadyCheckedMenu = NO;
+		if((mainMenu = [NSApp mainMenu]) == nil) {
+			if(!alreadyCheckedMenu) {
+				alreadyCheckedMenu = YES;
+				[[self class] performSelector: @selector(installMenu)
+								   withObject: nil
+								   afterDelay: 1.0];
+			}
+			return;
+		}
+		
+		static BOOL alreadyCheckedMenuCount = NO;
+		if(!alreadyCheckedMenuCount) {
+			alreadyCheckedMenuCount = YES;
+			size_t c = [[mainMenu itemArray] count];
+			if(c <= 2) {
+				NSLog(@"main Menu entry count: %lu", c);
+				[[self class] performSelector: @selector(installMenu)
+								   withObject: nil
+								   afterDelay: 1.0];
+				return;
+			}
+		}
+
         NSMenu *insertIntoMenu = nil;
         NSMenuItem *item;
         unsigned long insertLoc = NSNotFound;
