@@ -125,6 +125,8 @@
             [fsaMenu release];
 
             // Add the items for the commands.
+            item = [fsaMenu addItemWithTitle: @"New F-Script Browser" action:@selector(createBrowserWindow:) keyEquivalent: @""];
+            [item setTarget: self];
             item = [fsaMenu addItemWithTitle: NSLocalizedStringFromTableInBundle(@"New F-Script Workspace", @"FSA", bundle, @"Title of F-Script Workspace menu item") action:@selector(createInterpreterWindow:) keyEquivalent: @""];
             [item setTarget: self];
             [fsaMenu addItemWithTitle: NSLocalizedStringFromTableInBundle(@"Associate With Interface", @"FSA", bundle, @"Title of Associate with Interface menu item") action: @selector(FSA_associateWithInterface:) keyEquivalent: @""];
@@ -142,9 +144,17 @@
     SEL sel;
     NSAssert([menuItem target] == self, @"menu item does not target FSAController!");
     sel = [menuItem action];
-    if (sel == @selector(showInfo:) || sel == @selector(createInterpreterWindow:)) return YES;
+    if (sel == @selector(showInfo:) ||
+		sel == @selector(createInterpreterWindow:) ||
+		sel == @selector(createBrowserWindow:))
+		return YES;
     FSALog(@"+[FSAController validateMenuItem:] unknown menu item for validation: %@", menuItem);
     return NO;
+}
+
++ (void)createBrowserWindow:(id)sender;
+{
+	[[FSInterpreter interpreter] browse];
 }
 
 + (void)createInterpreterWindow:(id)sender;
